@@ -771,7 +771,7 @@ function Dashboard() {
   const [isTyping, setIsTyping] = useState(false)
 
   // Google Gemini AI integration
-  const GEMINI_API_KEY = "AIzaSyCmNt7w8XyXmq7iI3TEmw4uCKMOHR8F2Gg"
+  const GEMINI_API_KEY = "AIzaSyABnhLfsFuH1W7OMve9-XTVSReO5aH7-dM"
   const genAI = new GoogleGenerativeAI(GEMINI_API_KEY)
 
   const sendMessageToGemini = async (message) => {
@@ -779,10 +779,10 @@ function Dashboard() {
       setIsTyping(true)
       
       // Initialize the model
-      const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp" })
+      const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" })
       
       // Create the prompt with context
-      const prompt = `You are a helpful career guidance assistant for SkillBridge platform. Help users with career advice, skills development, job search tips, interview preparation, and professional growth. Keep responses concise, friendly, and actionable. Do not use asterisks or any markdown formatting in your responses - use plain text only.
+      const prompt = `You are a helpful career guidance assistant for SkillBridge platform. Help users with career advice, skills development, job search tips, interview preparation, and professional growth. Keep responses concise, friendly, and actionable. Do not use asterisks or any markdown formatting in your responses - use plain text only.please provide defentive answers and thn explain the answer to the user in plain language.
 
 User question: ${message}
 
