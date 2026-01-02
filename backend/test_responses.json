@@ -1,0 +1,131 @@
+{
+  "HEALTH": {
+    "status": 200,
+    "json": {
+      "ok": true,
+      "llm_ready": true,
+      "gemini_pkg": true,
+      "chroma_pkg": true,
+      "spacy_ready": true,
+      "chroma_dir": "./chroma",
+      "collection": "skillbridge_resumes"
+    }
+  }
+}
+{
+  "match/resume-job (no AI)": {
+    "status": 200,
+    "json": {
+      "matched_skills": [
+        "backend",
+        "engineer",
+        "fastapi",
+        "python"
+      ],
+      "missing_skills": [
+        "backend engineer",
+        "experienced",
+        "looking",
+        "senior",
+        "with"
+      ],
+      "score": 0.444,
+      "ai_reasoning": null
+    }
+  }
+}
+{
+  "match/resume-job (with AI)": {
+    "status": 200,
+    "json": {
+      "matched_skills": [
+        "backend",
+        "engineer",
+        "fastapi",
+        "python"
+      ],
+      "missing_skills": [
+        "backend engineer",
+        "experienced",
+        "looking",
+        "senior",
+        "with"
+      ],
+      "score": 0.444,
+      "ai_reasoning": "Here's an analysis of your skills against the job keywords, focusing on fit, gaps, and next steps:\n\n---\n\n### 1) Fit Summary\n\nYou have a **strong technical alignment** with the core requirements of this role. Your skills in `python`, `fastapi`, and general `backend` `engineer`ing directly match the explicit technical keywords.\n\nFurthermore, your `docker` and `postgresql` skills are excellent complementary technologies for a robust backend role. While not explicitly listed in the job keywords, they demonstrate a well-rounded skillset that is highly valuable and often expected in modern backend development environments.\n\n**In essence, your technical toolkit is very well-suited for the technologies mentioned in the job description.**\n\n### 2) Missing Skill Clusters\n\nThe primary gap identified is not in specific technical tools, but rather in the **seniority and experience level** implied by the job keywords.\n\n*   **Seniority & Experience:** The keywords `experienced` and `senior` strongly suggest the role is looking for someone with a proven track record beyond just technical proficiency. This typically includes:\n    *   **Project Leadership:** Leading initiatives, defining scope, and driving projects to completion.\n    *   **Architectural Design:** Contributing to or owning the design of complex systems, considering scalability, reliability, and maintainability.\n    *   **Mentorship & Guidance:** Guiding junior engineers, performing comprehensive code reviews, and elevating team standards.\n    *   **Strategic Thinking:** Understanding business needs and translating them into technical solutions, making trade-offs, and influencing technical direction.\n    *   **Problem Solving at Scale:** Tackling complex, ambiguous problems and delivering robust solutions.\n\nWhile your technical skills are strong, the job description implies a need for demonstrated impact and leadership that goes beyond individual contributions.\n\n### 3) Quick Upskilling Ideas\n\nTo bridge the perceived gap in seniority and experience, focus on demonstrating impact, leadership, and broader system understanding:\n\n1.  **Lead a Project End-to-End (or a Significant Feature):**\n    *   **Action:** Take ownership of a substantial feature or a small project at your current role. Drive it from initial requirements gathering, through design, implementation, testing, and deployment.\n    *   **Focus:** Document your decision-making process, challenges faced, solutions implemented, and the impact (quantifiable if possible). This shows initiative, ownership, and problem-solving.\n\n2.  **Deepen System Design Knowledge:**\n    *   **Action:** Actively study common backend architectural patterns (e.g., microservices, event-driven architectures, caching strategies, load balancing, database scaling).\n    *   **Resource:** Explore resources like \"Grokking the System Design Interview\" or similar books/courses. Practice designing systems for various scenarios. This will equip you to contribute to higher-level architectural discussions.\n\n3.  **Active Mentorship & Code Review:**\n    *"
+    }
+  }
+}
+{
+  "match/resume-courses": {
+    "status": 200,
+    "json": {
+      "results": [
+        {
+          "course_title": "Intro to SQL",
+          "matched_skills": [],
+          "missing_skills": [
+            "intro",
+            "sql",
+            "to"
+          ],
+          "relevance_score": 0.0
+        },
+        {
+          "course_title": "Docker Fundamentals",
+          "matched_skills": [
+            "docker"
+          ],
+          "missing_skills": [
+            "fundamentals"
+          ],
+          "relevance_score": 0.5
+        },
+        {
+          "course_title": "Kubernetes Basics",
+          "matched_skills": [],
+          "missing_skills": [
+            "basics",
+            "kubernetes"
+          ],
+          "relevance_score": 0.0
+        }
+      ]
+    }
+  }
+}
+{
+  "interview/questions": {
+    "status": 200,
+    "json": {
+      "questions": "Alright, let's dive in. As a seasoned technical interviewer, I'm looking for practical understanding and problem-solving skills, not just memorized definitions. These questions are designed to assess your hands-on knowledge and how you approach common backend engineering challenges with the tools you've listed.\n\nHere are 12 questions for a junior Backend Engineer candidate:\n\n1.  Explain Python's `async/await` keywords and provide a simple, practical use case within a web API context.\n2.  How do you manage project dependencies and isolate environments in Python? Why is this crucial for backend development?\n3.  Describe your approach to debugging a Python application when an unexpected error occurs. What tools or techniques do you typically use?\n4.  You're building an endpoint to create a new user. How would you use Pydantic for request body validation in FastAPI, and what happens on validation failure?\n5.  How would you integrate a PostgreSQL database with a FastAPI application, specifically managing database sessions or connections efficiently?\n6.  Explain FastAPI's Dependency Injection system. Provide a concrete example of how you'd use it for a common task like authentication or database access.\n7.  Provide a basic `Dockerfile` for a Python FastAPI application, explaining the purpose of each key instruction.\n8.  What is the practical difference between `COPY` and `ADD` in a `Dockerfile`? When would you choose one over the other?\n9.  Your FastAPI application uses a PostgreSQL database running in a Docker container. How do you ensure the database's data persists even if the container is removed or updated?\n10. When and why would you add an index to a"
+    }
+  }
+}
+{
+  "resume/ingest": {
+    "status": 200,
+    "json": {
+      "doc_id": "c3410e94-572c-4ef7-9399-466de045fce6",
+      "chunks": 6,
+      "chars": 4768,
+      "user_id": "test-user"
+    }
+  }
+}
+{
+  "jobs/cover-letter": {
+    "status": 200,
+    "json": {
+      "cover_letter": "Dear Hiring Manager,\n\nI am writing to express my enthusiastic interest in the Backend Engineer position at Acme Corp. With a robust background in Python development and a proven history of designing and deploying efficient backend systems, I am confident in my ability to contribute significantly to your team.\n\nMy technical expertise aligns strongly with your requirements. I possess extensive proficiency in Python, utilized in projects ranging from developing CNN-based systems to building complex machine learning models. While the",
+      "used_chunks": [
+        "int  planning,  \nboosting\n \nteam\n \nproductivity\n \nby\n \n40%\n \nand\n \nreducing\n \nmanual\n \neffort\n \nin\n \ntask\n \nmanagement\n \nacross\n \n5+\n \nagile\n \nteams.\n Quality  Management  System   \u25cf  Developed  a  QMS  web  App  using  Node.js,  Express.js,  React.js,  and  MySQL,  benefiting  100+  faculty  members.  Deliber a tiv es  -  Leaderboards  to  foster  learning  experience  \u25cf  Built  an  employee  engagement  platform  enabling  100+  users  to  log  learning  applications,  track  progress  and  \ncompete\n \non\n \nleaderboards,\n \nenhancing\n \npeer-driven\n \ninsights.\n Cybersecurity  AI  Agent  (SIRP)  \u25cf  Designed  and  deployed  an  NLP-driven  agent  within  the  SOAR  platform  that  automated  over  70%  of  threat  triage  tasks,  \nreducing\n \nresponse\n \ntime\n \nby\n \n60%\n \nand\n \nenhancing\n \ndetection\n \naccuracy\n \nusing\n \ncustom\n \nLLM\n \npipelines.",
+        "70%  of  threat  triage  tasks,  \nreducing\n \nresponse\n \ntime\n \nby\n \n60%\n \nand\n \nenhancing\n \ndetection\n \naccuracy\n \nusing\n \ncustom\n \nLLM\n \npipelines.\n Disease  Detection  System  \u25cf  Developed  a  CNN-based  system  in  python,  achieving  92%  accuracy  in  detecting  pneumonia  and  tuberculosis.  T ealHQ  -  AI-Powered  Resume  Matching  and  Cover  Letter  Generation  \u25cf  Created  a  Next.js  application  to  match  resumes  with  job  descriptions  accurately  and  generating  cover  letters.  LearnFlow  \u2013  Collaborative  Learning   \u25cf  Built  an  AI-powered  study  platform,  organizing  resources  with  peers  and  auto-generating  100+  flashcards.    NFL  Big  Data  Bowl  \u25cf  Built  machine  learning  models  (regression,  deep  learning)  to  analyze  NFL  data  from  9  weeks,  creating  \nmetrics\n \nfor\n \ntackling\n \nefficiency\n \nand\n \nimproving\n \npredictive\n \naccuracy\n \nby\n \n15%\n.\n ACHIEVEMENTS  AND  LEADERSHIP   \u25cf  Leadership :  President  of  Software  Innovators  Club,  a  50+  member  tech  club  since  Oct  2023,  organizing  SE  Dept.  \nevents,\n \nand\n \nleading\n \nthe\n \nExecutive\n \nBoard\n \nof\n \nthe\n \nCub.",
+        "rs  Club,  a  50+  member  tech  club  since  Oct  2023,  organizing  SE  Dept.  \nevents,\n \nand\n \nleading\n \nthe\n \nExecutive\n \nBoard\n \nof\n \nthe\n \nCub.\n \u25cf  Hackathon  Wins :  Two-time  hackathon  winner  (Koderz  Kombat  at  Iconics  2022,  Web  Development  Hackathon  at  \nDev\n \nDay\n \n2025)\n \u25cf  Awards :  Merit-based  laptop  scheme  awardee  and  scholarship  recipient  at  NED  University.  Winner  of  Prime  \nMinister\u2019s\n \nlaptop\n \naward\n SKILLS   Programming:  Java,  Python,  JavaScript,  HTML/CSS,  SQL,  Node.js,  React.js,  C++,  AI/ML/DL  in  Python  Tools:  Visual  Studio,  IntelliJ,  PyCharm,  Azure,  Jupyter  Notebooks,  Git,  Bootstrap,  Spring  Boot,  Agile,  RAG,  Postgres,  VectorDB",
+        "nce  for  autonomous  cybersecurity.  \u25cf  Developing  AI  agents  for  SOAR  to  automate  threat  detection,  alert  triage,  and  incident  response.  Quality  Enhancement  Cell  (QEC)  \u2013  NED  -  Web  Developer  -  Intern                                          Feb  2024  \u2013  Jun  2024  |  Karachi,  Pakistan  \u25cf  Worked  with  the  team  on  QEC  portal  project  using  NodeJS  and  ExpressJS.  \u25cf  Created  automated  workflow  to  eliminate  old  manual  processes  to  enhance  accuracy  and  efficiency.     Jinnah  Lincoln  Foundation  -  Analyst  Machine  Learning  -  Intern                                                 Sep  2023  \u2013  Dec  2023 |  New  York,  USA  \u25cf  Gained  practical  experience  in  the  field  of  machine  learning  and  data  science  through  an  internship  at  JLF.  \u25cf  Assisted  with  various  data  science  tasks,  including  data  analysis,  model  development,  and  project  implementation.",
+        "nternship  at  JLF.  \u25cf  Assisted  with  various  data  science  tasks,  including  data  analysis,  model  development,  and  project  implementation.  EvantageSoft  Private  Limited  -  Java  Springboot  -  Intern                                                        Aug  2023  \u2013  Sep  2023    |  Karachi,  Pakistan  \u25cf  Gained  hands-on  experience  in  Java  development  by  creating  APIs  using  Spring  Boot.  \u25cf  This  internship  at  EVS  provided  valuable  insights  into  the  software  development  lifecycle  and  API  design  principles.  \nPROJECTS   Elevate360  \u2013  AI-Powered  Project  Management  \u25cf  Built  an  intelligent  project  management  system  enabling  automatic  requirement  generation  and  sprint  planning,  \nboosting\n \nteam\n \nproductivity\n \nby\n \n40%\n \nand\n \nreducing\n \nmanual\n \neffort\n \nin\n \ntask\n \nmanagement\n \nacross\n \n5+\n \nagile\n \nteams.",
+        "Eraj  Tanweer  Karachi,  Pakistan  |  erajtanweer2@gmail.com  |  WhatsApp:  0333-2162005  |  LinkedIn  |  GitHub EDUCATION   NED  University  of  Engineering  and  Technology  Karachi,  Pakistan  B.E.  in  Software  Engineering  CGPA:  3.82    May  2022  -  Jun  2026  o  Focus:  Artificial  Intelligence,  Machine  Learning,  Deep  Learning,  Web  Development  o  Coursework:  Data  Structures  &  Algorithms,  Object-Oriented  Programming,  Web  Engineering,  Database  \nManagement\n \nSystems,\n \nSoftware\n \nConstruction\n \nand\n \nDevelopment,\n \nData\n \nWarehousing\n \nand\n \nMining\n \n EXPERIENCE   SIRP   -  AI  Engineer                                                                                                                              Mar  2025\u2013  Present  |  Karachi,  Pakistan  \u25cf  Building  OmniSense ,  a  next-gen  AI  system  with  integrated  threat  intelligence  for  autonomous  cybersecurity.  \u25cf  Developing  AI  agents  for  SOAR  to  automate  threat  detection,  alert  triage,  and  incident  response."
+      ]
+    }
+  }
+}
